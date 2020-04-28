@@ -274,7 +274,7 @@ public class WebRTCModule extends ReactContextBaseJavaModule implements Activity
         }
 
         if (adm == null) {
-            JavaAudioDeviceModule.builder(reactContext)
+           adm = JavaAudioDeviceModule.builder(reactContext)
                     .setUseHardwareAcousticEchoCanceler(false)
                     .setUseHardwareNoiseSuppressor(false)
                     .createAudioDeviceModule();
