@@ -734,7 +734,8 @@ public class WebRTCModule extends ReactContextBaseJavaModule implements Activity
         VideoTrack track = pcFactory.createVideoTrack(id, videoSource);
 
         track.setEnabled(true);
-        int width = videoConstraintsMap.getInt("width"), height = videoConstraintsMap.getInt("height"), fps = 0;
+        //FIXME: change these values based on orientation
+        int width = 1920, height = 1080, fps = 0;
 
         try {
             videoCapturer.startCapture(width, height, fps);
