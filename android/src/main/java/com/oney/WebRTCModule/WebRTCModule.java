@@ -131,7 +131,7 @@ public class WebRTCModule extends ReactContextBaseJavaModule implements Activity
      */
     final class CapturerObserverProxy implements CapturerObserver {
 
-        private static final int VIDEO_FPS = 30;
+        private static final int VIDEO_FPS = 5;
 
         private CapturerObserver capturerObserver;
         private VideoFrame videoFrame;
